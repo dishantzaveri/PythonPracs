@@ -10,8 +10,6 @@ b=10.23
 c=-10
 d=20j
 
-
-
 print(type(a))
 print(type(b))
 print(type(c))
