@@ -31,21 +31,33 @@ print(2<=3)
 
 a=10
 
+print(a)
+
 a+=10
+print(a)
 
 a-=10
+print(a)
 
 a*=10
+print(a)
 
 a/=10
+print(a)
 
 a%=10
+print(a)
 
 a**=10
+print(a)
 
 a//=10
+print(a)
 
 #logical
+
+print(2>3 and 3>4)
+
 
 
 
