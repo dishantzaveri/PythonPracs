@@ -81,3 +81,11 @@ print("cube of the elements in the list")
 arr2=[]
 arr2=list(map(lambda x:x*x*x,filter(lambda x:x%2!=0,arr1)))
 print(arr2)
+
+#reduce function
+
+from functools import reduce
+nums=[1,2,3,4,5,6,7,8,9,10]
+
+summ = reduce(lambda a,b:a+b,nums)
+print(summ)
