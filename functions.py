@@ -46,8 +46,6 @@ print(maximum(a,b))
 
 #map function
 
-import math
-
 list1=[]
 list2=[]
 n=int(input("enter the number of elements in list 1"))
@@ -68,3 +66,18 @@ print(list2)
 
 result=map(lambda x,y:x+y,list1,list2)
 print(list(result))
+
+#filter function
+
+arr1=[]
+N=int(input("enter the number of elements in list"))
+print("enter the elements")
+for i in range(0,N):
+    ele=int(input())
+    arr1.append(ele)
+print(arr1)
+print("cube of the elements in the list")
+
+arr2=[]
+arr2=list(map(lambda x:x*x*x,filter(lambda x:x%2!=0,arr1)))
+print(arr2)
