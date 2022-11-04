@@ -7,3 +7,6 @@ T=tuple(L)
 print("Tuple after adding new element:")
 print(T)
  
+l=(1,3,6,8,5,6,2,65,4,9,2)
+print(f"count: {l.count(2)}")
+print(f"index: {l.index(5)}")

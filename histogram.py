@@ -1,4 +1,4 @@
-def histogram(1):
+def histogram(l):
     count=0
     x=[]
     k=[]
