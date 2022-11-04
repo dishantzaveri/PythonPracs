@@ -1,28 +1,98 @@
-class Dishu:
-    a=10
-p1=Dishu()
-print(p1.a)
+class Employee:    
 
-class Person:
-    def __init__(self,fname,lname):
-        self.firstname=fname
-        self.lastname=lname
-# p1=Person("Devraj","Mishra")
-# print(p1.firstname)
-# print(p1.lastname)
-    def printname(self):
-        print(self.firstname,self.lastname)
+    def __init__(self, id, name, salary, designation):  
 
-p1=Person("Devraj","Mishra")
-p1.firstname=("scam")
-p1.printname()
+        self.id = id        
 
-fn=input("enter fname")
-ln=input("enter lname")
-p1=Person(fn,ln)
-p1.printname()
+        self.name = name  
 
-print(p1)
-del p1
-print(p1)
+        self.salary = salary        
 
+        self.designation = designation  
+
+ 
+
+class Developer(Employee):  
+
+    pass  
+
+ 
+
+class Tester(Employee):  
+
+    pass  
+
+class Manager(Employee):  
+
+    listDevelopers = []    
+
+    listTesters = []      
+
+    def addDeveloper(self, id, name, salary):          
+
+        d = Developer(id, name, salary, "Developer")        
+
+        self.listDevelopers.append(d)  
+
+ 
+
+    def removeDeveloper(self, id):        
+
+        for developer in self.listDevelopers:            
+
+            if(developer.id == id):  
+
+                self.listDevelopers.remove(developer)  
+
+ 
+
+    def addTester(self, id, name, salary):        
+
+        t = Developer(id, name, salary, "Tester")        
+
+        self.listTesters.append(t)  
+
+ 
+
+    def removeTester(self, id):        
+
+        for tester in self.listTesters:            
+
+            if(tester.id == id):  
+
+                self.listTesters.remove(tester)    
+
+    def showEmployees(self):        
+
+        print("Developers:")        
+
+        for developer in self.listDevelopers:  
+
+            print(developer.name)        
+
+        print("Testers:")        
+
+        for tester in self.listTesters:            
+
+            print(tester.name)  
+
+
+m1 = Manager(1, "ABC", 100000, "Manager")
+
+m1.addDeveloper(2, "DEF", 50000)
+
+m1.addDeveloper(3, "GHI", 45000)
+
+m1.addDeveloper(4, "JKL", 40000)
+
+m1.addTester(5, "MNO", 20000)
+
+m1.addTester(6, "PQR", 20000)
+
+m1.showEmployees()
+
+m1.removeDeveloper(3)
+
+m1.removeTester(6)
+
+m1.showEmployees()
