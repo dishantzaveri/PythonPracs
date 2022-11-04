@@ -9,4 +9,4 @@ def perfect(num):
         return 0
 
 
-print(perfect(6))
+print(perfect(28))
