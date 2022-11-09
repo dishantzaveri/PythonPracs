@@ -1,16 +1,9 @@
 # Exception understanding
 
-# # index error exception
-# list_data = [1, 2, 3, 4, 5]
-# x=  list_data[6]
 
-# # keyboard interrupt error
-# name=input('Enter your name')
-# ctrl + c
 
-# # key error
-# dict_data={'2' : 'two', '4' : 'four', '6' : 'six'}
-# dict_data['5']
+
+
 
 # # 6 name error
 # Names = ['Vijay','Dishant','Rohan']
@@ -38,7 +31,7 @@
 # if a>b
 #     print("a is large")
 
-# # 11 Excetion handling
+# # 11 Exception handling
 # try:
 #     a,b = eval(input("Enter 2 nos seperated bt comma"))
 #     result = a/b
@@ -60,6 +53,41 @@
 
 # User-defined exceptions
 
+
+
+
+value error
+
+List = [1,2,3,4,5]
+a,b,c = List
+print(a)
+print(b)
+print(c)
+
+#arithmetic error
+
+number  = 6
+ZeroErro = 6 / 0
+
+#import error
+
+import xyz
+
+list_data = [1, 2, 3, 4, 5]
+x=  list_data[6]
+
+index error exception
+list_data = [1, 2, 3, 4, 5]
+x=  list_data[6]
+
+key error
+dict_data={'2' : 'two', '4' : 'four', '6' : 'six'}
+dict_data['5']
+
+# keyboard interrupt error
+name=input('Enter your name')
+
+#user defined exception
 
 
 class BaseError(Exception):
@@ -85,5 +113,3 @@ while(1):
     else:
         print("Nice!Correct answer")
         break
-
-
