@@ -21,3 +21,8 @@ rolflmoa@yahoo.co.in
 455-78-888
 022-240-93836
 02642*221*381
+Use regular expression for the above text to find:
+· Names of the User.
+· Website name exclusing http/s
+· Identify email ids
+· Identify Phone numbers
